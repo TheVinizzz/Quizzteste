@@ -1,0 +1,41 @@
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+  
+      @media (min-width: 1024px) {
+        .conteudo {
+          width: auto;
+          height: 700px;
+        }
+      }
+     
+      @media (max-width: 1024px) {
+        .conteudo {
+          width: auto;
+          height: 750px;
+        }
+        .quizz1{
+
+            background-position: left center;
+            animation: load-back 1s ease-in-out;
+        }
+        @keyframes load-back
+        {
+            0%
+            {
+            opacity: 0;
+            background-position: left;
+    
+            }
+            100%
+            {
+            opacity: 1;
+            background-position: left center;
+            }
+            
+        }
+        
+    }

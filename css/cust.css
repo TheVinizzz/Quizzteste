@@ -1,0 +1,194 @@
+.MyFont {
+ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+ color: #ffffff;
+ font-weight: bold;
+ line-height: 90%;
+ font-size: 27px;
+ -webkit-text-stroke-width: .5px; 
+    -webkit-text-stroke-color: #000;
+}
+.lead{
+   font-size: 17px; 
+}
+.card-title{
+ font-size: 25px;
+}
+.big{
+ color: rgb(0, 0, 0) !important;
+font-weight: bold;
+ font-size: 35px;
+}
+.br{
+ background-color: #fb6801;
+border-color:#fb6801;
+}
+.btn-primary:hover {
+    font-weight: bold;
+    color: #fff;
+    background-color: #fb6801;
+    border-color: #fb6801;
+}
+#perg1
+{
+    opacity: 1;
+    transition: .3s;
+}
+
+.body
+{
+   max-width: 100%;
+   overflow-x: hidden;
+
+   
+}
+/* PAGINA INTERFACE*/
+
+.global1
+{
+    position: absolute;
+    opacity: 1;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.logoGlobal
+{
+    text-align: center;
+    color: azure;
+    font-size: 2em;
+}
+#textoGlob
+{
+    opacity: 1;
+    
+}
+#botaoGlobal
+{
+    margin-top: 50px;
+}
+.inter1
+{
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: #000;
+    animation: inter-animate 1s ease;
+    
+}
+
+.inter2
+{
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #000;
+    animation: inter-animate2 1s ease;
+    
+}
+
+/*CONTEUDO DO QUIZ*/
+.quizz1
+{
+
+   background-image: url(../img/menina1-min.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    animation: load-back 1s ease-in-out;
+    
+}
+#quizz2
+{
+    opacity: 0;
+    transition: all 1s;
+}
+#quizz3
+{
+    opacity:0;
+    transition: all 1s;
+    
+}
+
+
+/*animação*/
+
+.logoUtua
+{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    
+}
+
+.logoUtua svg
+{
+    margin: 5px 0px 0px 10px;
+    width: 200px;
+    stroke-width: 2px;
+    stroke: black;
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+    animation: logoAnime 4s ease-in-out forwards;
+  }
+  .ultS
+  {
+      animation: inter-animate2 1s ease;
+      transition: all .5s;
+  }
+  .ultN
+  {
+    animation: inter-animate 1s ease;
+    transition: all .5s;
+  }
+  @keyframes logoAnime
+  {
+      0%
+      {
+          stroke-dashoffset: 1000;
+      }
+      70%
+      {
+          stroke-dashoffset: 0;
+      }
+      100%
+      {
+           stroke-dashoffset: 0;
+      }
+    }
+    @keyframes inter-animate
+    { 0%
+       {
+       opacity: 0;
+       transform: translate3d(-100px, 0, 0);
+       
+       }
+       100%
+       {
+           opacity: 1;
+           transform: translate3d(0, 0, 0);
+       }
+   
+    }
+    @keyframes inter-animate2
+    {
+        0%
+        {
+            opacity: 0;
+            transform: translate3d(100px, 0, 0);
+        }
+        100%
+        {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }@keyframes load-back
+    {
+        0%
+        {
+        opacity: 0;
+        background-position: left top;
+
+        }
+        100%
+        {
+        opacity: 1;
+        background-position: center top;
+        }
+        
+    }
+    
