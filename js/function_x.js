@@ -46,81 +46,81 @@ function charge(question, resp) {
 
 
   if (question == 1) {
-    pergunta = "O que é mais importante para você?";
-    respostas = '<button class="ultS btn btn-lg btn-block btn-outline-danger" onclick="chama(1);charge(2,1);" id="perg1"> Limite de Crédito Alto</button>' +
-      '<button class="ultN btn btn-lg btn-block btn-outline-danger" onclick="chama(2);charge(2,2);"> Sem anuidade</button>' +
-      '<button class="ultS btn btn-lg btn-block btn-outline-danger" onclick="chama(3);charge(2,3);"> Milhas aéreas</button>';
+    pergunta = '<h3 class="ultS">O que é mais importante para você?</h3>';
+    respostas = '<button class="ultS btn btn-lg btn-block btn-outline-dark" onclick="chama(1);charge(2,1);" id="perg1"> Limite de Crédito Alto</button>' +
+      '<button class="ultN btn btn-lg btn-block btn-outline-dark" onclick="chama(2);charge(2,2);"> Sem anuidade</button>' +
+      '<button class="ultS btn btn-lg btn-block btn-outline-dark" onclick="chama(3);charge(2,3);"> Milhas aéreas</button>';
     questao_atual = 1;
 
   } else if (question == 2) {
     if (rest == 1) {
       pergunta = '<h3 class="ultN">Ótimo, você sabia que</h3>'
-      respostas = '<p class="ultS" style="font-size: 1.1em;">Algumas operadoras oferecem a possibilidade do limite estendido, permitindo que uma compra seja feita mesmo que o valor original tenha sido estourado.</p>' + '<button class="ultN btn btn-lg btn-block btn-outline-danger" onclick="charge(3,2)">Continuar</button>'
+      respostas = '<p class="ultS" style="font-size: 1.1em;">Algumas operadoras oferecem a possibilidade do limite estendido, permitindo que uma compra seja feita mesmo que o valor original tenha sido estourado.</p>' + '<button class="ultN btn btn-lg btn-block btn-outline-dark" onclick="charge(3,2)">Continuar</button>'
 
     }
     else if (rest == 2) {
       pergunta = '<h3 class="ultN">Ótimo, você sabia que</h3>'
-      respostas = '<p class="ultS" style="font-size: 1.1em;">Algumas operadoras oferecem programas de recompensa, que permitem ao consumidor acumular e trocar pontos por passagens aéreas, compras em restaurantes ou pagamento de serviços digitais, como Uber, iFood e Netflix.</p>' + '<button class="ultN btn btn-lg btn-block btn-outline-danger" onclick=charge(3,2)>Continuar</button>'
+      respostas = '<p class="ultS" style="font-size: 1.1em;">Algumas operadoras oferecem <b><i>programas de recompensa</i></b>, que permitem ao consumidor acumular e trocar pontos por passagens aéreas, compras em restaurantes ou pagamento de serviços digitais, como <b><i>Uber</i></b>, <b><i>iFood</i></b> e <b><i>Netflix</i></b>.</p>' + '<button class="ultN btn btn-lg btn-block btn-outline-dark" onclick=charge(3,2)>Continuar</button>'
     } else if (rest == 3) {
       pergunta = '<h3 class="ultN">Ótimo, sabia que</h3>'
-      respostas = '<p class="ultS" style="font-size: 1.1em;">Toda vez que você paga uma fatura do seu cartão de crédito, acumula pontos para transformá-los em milhas, podendo vender e ganhar dinheiro extra, trocar por passagem aérea nos programas de fidelidade das companhias aéreas, trocar por produtos e serviços nos programas de fidelidade dos bancos e cartões.</p>' + '<button class="ultN btn btn-lg btn-block btn-outline-danger" onclick=charge(3,2)>Continuar</button>'
+      respostas = '<p class="ultS" style="font-size: 1.1em;">Toda vez que você paga uma fatura do seu cartão de crédito,<b><i> acumula pontos para transformá-los em milhas, podendo vender e ganhar dinheiro extra, trocar por passagem aérea nos programas de fidelidade das companhias aéreas, trocar por produtos e serviços nos programas de fidelidade dos bancos e cartões.</i></b></p>' + '<button class="ultN btn btn-lg btn-block btn-outline-dark" onclick=charge(3,2)>Continuar</button>'
     }
     questao_atual = 2;
   }
   else if (question == 3) {
     $('#resp_1').val(resp);
-    pergunta = "Em qual grupo você se encaixa?";
-    respostas = '<button class="ultN btn btn-lg btn-block btn-outline-danger"  onclick="chama(1);charge(4,1);">Aposentado / Pensonista / Servidor Público</button>' +
-      '<button class="ultS btn btn-lg btn-block btn-outline-danger"  onclick="chama(2);charge(4,2)">Concurseiro / Estudante universitario</button>' +
-      '<button class="ultN btn btn-lg btn-block btn-outline-danger"  onclick="chama(3);charge(4,3)">Carteira assinada / Autonomo / Empreendedor</button>' +
-      '<button class="ultS btn btn-lg btn-block btn-outline-danger"  onclick="chama(4);charge(4,4)">Estou Desempregado</button>';
+    pergunta = '<h3 class="ultS">Em qual grupo você se encaixa?</h3>';
+    respostas = '<button class="ultN btn btn-lg btn-block btn-outline-dark"  onclick="chama(1);charge(4,1);">Aposentado / Pensonista / Servidor Público</button>' +
+      '<button class="ultS btn btn-lg btn-block btn-outline-dark"  onclick="chama(2);charge(4,2)">Concurseiro / Estudante universitario</button>' +
+      '<button class="ultN btn btn-lg btn-block btn-outline-dark"  onclick="chama(3);charge(4,3)">Carteira assinada / Autonomo / Empreendedor</button>' +
+      '<button class="ultS btn btn-lg btn-block btn-outline-dark"  onclick="chama(4);charge(4,4)">Estou Desempregado</button>';
     questao_atual = 3;
 
   }
   else if (question == 4) {
     if (rest == 1) {
-      pergunta = '<h3 class="ultN">Parabéns</h3>'
-      respostas = '<p class="ultS" style="font-size: 1.1em;">Você é elegivel para o cartão de crédito consignado, obtenha vantagens como: <b><i>Taxas de juros menores, Limite referente a margem consignável, Margem consignável exclusiva, Sem risco de SPC/Serasa.</i></b></p>' + '<button class="ultN btn btn-lg btn-block btn-outline-danger" onclick=charge(5,2)>Continuar</button>'
+      pergunta = '<h3 class="ultN">Parabéns</h3>';
+      respostas = '<p class="ultS" style="font-size: 1.1em;">Você é elegivel para o cartão de crédito consignado, obtenha vantagens como: <b><i>Taxas de juros menores, Limite referente a margem consignável, Margem consignável exclusiva, Sem risco de SPC/Serasa.</i></b></p>' + '<button class="ultN btn btn-lg btn-block btn-outline-dark" onclick=charge(5,2)>Continuar</button>'
     }
     else if (rest == 2) {
-      pergunta = '<h3 class="ultN">Excelente, Você sabia que</h3>'
-      respostas = '<p class="ultS" style="font-size: 1.1em;">Algumas operadoras oferencem cartões de credito para universitários, e elas oferecem algumas vantagens como: <b><i>Anuidade grátis/baixa, Menores taxas, Não precisa comprovar renda, Conta com as principais bandeiras, Cobertura internacional, Programa de pontos.</i></b></p>' + '<button class="ultN btn btn-lg btn-block btn-outline-danger" onclick=charge(5,2)>Continuar</button>'
+      pergunta = '<h3 class="ultN">Excelente, Você sabia que</h3>';
+      respostas = '<p class="ultS" style="font-size: 1.1em;">Algumas operadoras oferencem cartões de credito para universitários, e elas oferecem algumas vantagens como: <b><i>Anuidade grátis/baixa, Menores taxas, Não precisa comprovar renda, Conta com as principais bandeiras, Cobertura internacional, Programa de pontos.</i></b></p>' + '<button class="ultN btn btn-lg btn-block btn-outline-dark" onclick=charge(5,2)>Continuar</button>'
     } else if (rest == 3) {
-      pergunta = "autonomo!!"
-      respostas = "<p>klsjfklsdjfksdlkfjskdlf dsjfklsjdlkfjsdlfl</p>" + '<button class="ultN btn btn-lg btn-block btn-outline-danger" onclick=charge(5,2)>Continuar</button>'
+      pergunta = '<h3 class="ultN">Excelente!</h3>';
+      respostas = '<p class="ultS" style="font-size: 1.1em;">O cartão de crédito é uma ótima forma de fazer compras pela internet. Por exemplo, o cartão de crédito, sem dúvida, ainda é a opção mais ágil e dinâmica. A compra é realizada e o processo de aprovação é realizado quase que instantaneamente.</p>' + '<button class="ultN btn btn-lg btn-block btn-outline-dark" onclick=charge(5,2)>Continuar</button>'
     } else if (rest == 4) {
-      pergunta = "Desempregado!!"
-      respostas = "<p>klsjfklsdjfksdlkfjskdlf dsjfklsjdlkfjsdlfl</p>" + '<button class="ultN btn btn-lg btn-block btn-outline-danger" onclick=charge(5,2)>Continuar</button>'
+      pergunta = '<h3 class="ultN">Não se preocupe!</h3>';
+      respostas = '<p class="ultS" style="font-size: 1.2em;"><b>Algumas operadoras não pedem uma comprovação de renda antecipada.</b></p>' + '<button class="ultN btn btn-lg btn-block btn-outline-dark" onclick=charge(5,2)>Continuar</button>'
     }
     questao_atual = 4;
   }
 
   else if (question == 5) {
     $('#resp_2').val(resp);
-    pergunta = "Você esta negativado? ";
-    respostas = '<button class="ultS btn btn-lg btn-block btn-outline-danger"  onclick="chama(1);charge(6,1)">Sim</button>' +
-      '<button class="ultN btn btn-lg btn-block btn-outline-danger"  onclick="chama(2);charge(6,2)">Não</button>';
+    pergunta = '<h3 class="ultN">Você esta negativado?</h3>';
+    respostas = '<button class="ultS btn btn-lg btn-block btn-outline-dark"  onclick="chama(1);charge(6,1)">Sim</button>' +
+      '<button class="ultN btn btn-lg btn-block btn-outline-dark"  onclick="chama(2);charge(6,2)">Não</button>';
     questao_atual = 5;
   }
   else if (question == 6) {
     if (rest == 1) {
-      pergunta = "Sim!!"
-      respostas = "<p>klsjfklsdjfksdlkfjskdlf dsjfklsjdlkfjsdlfl</p>" + '<button class="ultN btn btn-lg btn-block btn-outline-danger" onclick=charge(7,2)>Continuar</button>'
+      pergunta = '<h3 class="ultN">Não se preocupe!</h3>';
+      respostas = '<p class="ultS" style="font-size: 1.2em;">Varias operadoras aceitam negativados para seus programas de cartões.</p>' + '<button class="ultN btn btn-lg btn-block btn-outline-dark" onclick=charge(7,2)>Continuar</button>'
     }
     else if (rest == 2) {
-      pergunta = "Não!!"
-      respostas = "<p>klsjfklsdjfksdlkfjskdlf dsjfklsjdlkfjsdlfl</p>" + '<button class="ultN btn btn-lg btn-block btn-outline-danger" onclick=charge(7,2)>Continuar</button>'
+      pergunta = '<h3 class="ultN">Excelente!</h3>';
+      respostas = '<p class="ultS" style="font-size: 1.2em;">Você tem mais chances de ser aprovado(a).</p>' + '<button class="ultN btn btn-lg btn-block btn-outline-dark" onclick=charge(7,2)>Continuar</button>'
     }
     questao_atual = 6;
   }
   else if (question == 7) {
 
     $('#resp_3').val(resp);
-    html = '<img src="img/JD-20-512.png" class="img-fluid"><br>' +
+    html = '<div class="ultC">' + '<img src="img/JD-20-512.png" class="img-fluid " ><br>' +
       '<h1 class="MyFont">Falta pouco!</h1>' +
-      '<p class="lead">Digite seus dados abaixo e receba o cartão perfeito para você.</p>' +
+      '<p class="lead text-dark font-weight-bold">Digite seus dados abaixo e receba o cartão perfeito para você.</p>' +
       '</div>' +
-      '<div class="row justify-content-md-center">' +
+      '<div class="ultB row justify-content-md-center">' +
       '<div class="col-md-9" >' +
 
       '<div class="form-group">' +
@@ -134,9 +134,9 @@ function charge(question, resp) {
 
       '</div><br>' +
       '<button onclick="send_info()" class="btn btn-primary btn-block br">VER MEU CARTÃO DE CRÉDITO</button><br>' +
-      '<label  id="label_check" class="form-check-label" for="exampleCheck1"><a class="text-light" href="https://utua.com.br/politica-de-privacidade/" target="_blank" >Ao clicar no botão "ver meu cartao" você concorda com os termos de uso e as politicas de privacidade.</a></label>' +
+      '<label  id="label_check" class="form-check-label" for="exampleCheck1"><a class="text-dark" href="https://utua.com.br/politica-de-privacidade/" target="_blank" >Ao clicar no botão "ver meu cartao" você concorda com os termos de uso e as politicas de privacidade.</a></label>' +
 
-      '</div>'
+      '</div>' + '</div>'
 
 
     $('#maincontent_id').html(html);
@@ -147,7 +147,7 @@ function charge(question, resp) {
   if (question != 7) {
     percentual = (questao_atual / (total_questoes)) * 100;
 
-    $('#progressbar_id').html('<div class="barraC progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: ' + percentual + '%" aria-valuenow="' + percentual + '" aria-valuemin="0" aria-valuemax="100" ></div>');
+    $('#progressbar_id').html('<div class="barraC progress-bar progress-bar-striped bg-dark" role="progressbar" style="width: ' + percentual + '%" aria-valuenow="' + percentual + '" aria-valuemin="0" aria-valuemax="100" ></div>');
 
     $('#questaoatual_id').html(questao_atual);
     $('#percentual_id').html(percentual);
@@ -240,7 +240,7 @@ function botaoGlobal() {
   quiz1.style.opacity = "1";
   quiz2.style.opacity = "1"
   quiz3.style.opacity = "1";
-  global1.style.opacity = "-1";
+  global1.style.opacity = "0";
   global1.style.zIndex = "-1";
 }
 

@@ -1,11 +1,17 @@
 .MyFont {
  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
- color: #ffffff;
+ color:#0c0c0b;
  font-weight: bold;
  line-height: 90%;
  font-size: 27px;
- -webkit-text-stroke-width: .5px; 
-    -webkit-text-stroke-color: #000;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .lead{
    font-size: 17px; 
@@ -85,11 +91,12 @@ border-color:#fb6801;
 /*CONTEUDO DO QUIZ*/
 .quizz1
 {
-
-   background-image: url(../img/menina1-min.png);
+    
+ background-image: url(../img/menina1-min.png);
     background-repeat: no-repeat;
     background-position: center top;
     animation: load-back 1s ease-in-out;
+    height: 100vh;
     
 }
 #quizz2
@@ -101,7 +108,19 @@ border-color:#fb6801;
 {
     opacity:0;
     transition: all 1s;
+     position: absolute;
+    top: 95vh; 
+    width: 100%;
+    overflow-x: hidden;
+    z-index: 9999;
     
+}
+#maincontent_id
+{
+background-color: rgba(250, 250, 250, .8);
+border-radius: 15px;
+margin: 10px auto 10px auto;
+box-shadow: 4px 5px rgba(8, 8, 8, .2);
 }
 
 
@@ -120,21 +139,28 @@ border-color:#fb6801;
     margin: 5px 0px 0px 10px;
     width: 200px;
     stroke-width: 2px;
-    stroke: black;
+    stroke: rgb(255, 255, 255);
     stroke-dashoffset: 1000;
     stroke-dasharray: 1000;
-    animation: logoAnime 4s ease-in-out forwards;
+    animation: logoAnime 2s ease-in-out forwards;
   }
   .ultS
   {
-      animation: inter-animate2 1s ease;
-      transition: all .5s;
+      animation: inter-animate2 .5s ease;
   }
   .ultN
   {
-    animation: inter-animate 1s ease;
-    transition: all .5s;
+    animation: inter-animate .5s ease; 
   }
+  .ultC
+  {
+    animation: inter-cima .5s ease;
+  }
+  .ultB
+  {
+    animation: inter-baixo .5s ease;
+  }
+  
   @keyframes logoAnime
   {
       0%
@@ -188,6 +214,74 @@ border-color:#fb6801;
         {
         opacity: 1;
         background-position: center top;
+        }
+        
+    }
+    @keyframes inter-cima
+    { 0%
+       {
+       opacity: 0;
+       transform: translate3d(0, -200px, 0);
+       
+       }
+       100%
+       {
+           opacity: 1;
+           transform: translate3d(0, 0, 0);
+       }
+    }
+    @keyframes inter-baixo
+    { 0%
+       {
+       opacity: 0;
+       transform: translate3d(0, 200px, 0);
+       
+       }
+       100%
+       {
+           opacity: 1;
+           transform: translate3d(0, 0, 0);
+       }
+    }
+    /* Resolução tela*/
+    
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+  
+      @media (min-width: 1024px) {
+        .conteudo {
+          width: auto;
+          height: 700px;
+        }
+      }
+     
+      @media (max-width: 1024px) {
+        .conteudo {
+          width: auto;
+          height: 750px;
+        }
+        .quizz1{
+
+            background-position: left center;
+            animation: load-back .5s ease-in-out;
+        }
+        @keyframes load-back
+        {
+            0%
+            {
+            opacity: 0;
+            background-position: left;
+    
+            }
+            100%
+            {
+            opacity: 1;
+            background-position: left center;
+            }
+            
         }
         
     }

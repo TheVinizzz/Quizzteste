@@ -36,7 +36,6 @@
 
   <link rel="stylesheet" href="dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/cust.css">
-  <link rel="stylesheet" href="css/resol.css">
   <title>Quiz | UTUA</title>
 
   <link rel="canonical" href="http://utua.com.br">
@@ -50,28 +49,12 @@
     href="https://utua.com.br/wp-content/uploads/2019/11/cropped-UTUA-FAVICON-180x180.png">
   <link rel="icon" href="https://utua.com.br/wp-content/uploads/2019/11/cropped-UTUA-FAVICON-32x32.png">
 
-
-
-
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-  </style>
-
-
-
 </head>
 
 <body class="">
   <!--Primeira interface-->
   <div class="global1">
-    <div class="logoUtua border-bottom border-dark ">
+    <div class="logoUtua border-bottom border-light ">
       <svg width="300" height="100" fill="none" viewBox="0 0 246.313 74.094">
         <path id="ATUA" class="cls-1"
           d="M683.266,137.5a1.3,1.3,0,0,0-1.3.936l-25.488,68.688a2.109,2.109,0,0,0-.072.5v0.5a1.321,1.321,0,0,0,.4.972,1.415,1.415,0,0,0,1.044.4h17.64a1.231,1.231,0,0,0,1.3-.936l3.888-10.3h23.04l3.816,10.3a1.231,1.231,0,0,0,1.3.936h17.712a1.352,1.352,0,0,0,1.368-1.368v-0.5a1.359,1.359,0,0,0-.072-0.432l-25.488-68.76a1.3,1.3,0,0,0-1.3-.936H683.266Zm8.856,29.736,5.04,13.32h-9.936ZM770.17,137.9a1.449,1.449,0,0,0-1.008-.4H717.394a1.36,1.36,0,0,0-1.44,1.44v14.328a1.318,1.318,0,0,0,.4.972,1.41,1.41,0,0,0,1.044.4h15.768v53.424a1.411,1.411,0,0,0,.4,1.044,1.322,1.322,0,0,0,.972.4h17.424a1.449,1.449,0,0,0,1.008-.4,1.349,1.349,0,0,0,.432-1.044V154.635h15.768a1.445,1.445,0,0,0,1.008-.4,1.265,1.265,0,0,0,.432-0.972V138.939A1.35,1.35,0,0,0,770.17,137.9Zm46.008-.4a1.352,1.352,0,0,0-1.368,1.368V182.5a15.046,15.046,0,0,1-.576,4.212,13.873,13.873,0,0,1-1.764,3.78,8.067,8.067,0,0,1-3.42,2.844,13.393,13.393,0,0,1-10.368,0,8.306,8.306,0,0,1-3.456-2.844,12.539,12.539,0,0,1-1.764-3.78,15.947,15.947,0,0,1-.54-4.212V138.867a1.269,1.269,0,0,0-.432-0.972,1.451,1.451,0,0,0-1.008-.4H774.058a1.352,1.352,0,0,0-1.368,1.368v43.272a35.967,35.967,0,0,0,.936,8.244,28.4,28.4,0,0,0,3.24,7.92,25.953,25.953,0,0,0,5.8,6.84,26.571,26.571,0,0,0,8.928,4.68,43.472,43.472,0,0,0,24.516,0,24.664,24.664,0,0,0,14.688-11.52,28.522,28.522,0,0,0,3.24-7.92,36.078,36.078,0,0,0,.936-8.244V138.867A1.352,1.352,0,0,0,833.6,137.5H816.178Zm41.9,0a1.3,1.3,0,0,0-1.3.936L831.3,207.123a2.109,2.109,0,0,0-.072.5v0.5a1.321,1.321,0,0,0,.4.972,1.414,1.414,0,0,0,1.044.4h17.64a1.231,1.231,0,0,0,1.3-.936l3.888-10.3h23.04l3.816,10.3a1.23,1.23,0,0,0,1.3.936h17.712a1.352,1.352,0,0,0,1.368-1.368v-0.5a1.388,1.388,0,0,0-.072-0.432l-25.488-68.76a1.305,1.305,0,0,0-1.3-.936H858.082Zm8.856,29.736,5.04,13.32h-9.936Z"
@@ -90,7 +73,7 @@
         </div>
       </div>
     </div>
-    <button type="button" class="botao1 btn btn-danger btn-lg btn-block shadow-lg" id="botaoGlobal"
+    <button type="button" class="botao1 btn btn-secondary btn-lg btn-block shadow-lg" id="botaoGlobal"
       onclick="botaoGlobal()">Entrar</button>
 
 
@@ -99,7 +82,7 @@
   </div>
 
   <!--Corpo do Quiz-->
-  <div class="quizz1 vsc-initialized overflow-hidden bg-warning" id="quizz1">
+  <div class="quizz1 vsc-initialized overflow-hidden bg-danger" id="quizz1">
 
     <input type="hidden" id="resp_1" value=''>
     <input type="hidden" id="resp_2" value=''>
@@ -111,8 +94,8 @@
 
 
     <div class="container-fluid" id="quizz2">
-      <div
-        class="d-flex flex-column flex-md-row align-items-center shadow-sm justify-content-md-center bg-light position-relative">
+      <div id="atuaa"
+        class="d-flex flex-column flex-md-row align-items-center shadow-sm justify-content-md-center bg-danger position-relative border border-dark">
         <h3 class="big ">UTUA</h3>
       </div>
 
@@ -154,7 +137,7 @@
 
 
 
-    <footer class="pt-1 my-md-0 pt-md-2 border-top bg-warning" id="quizz3">
+    <footer class="pt-1 my-md-0 pt-md-2 border-top bg-danger" id="quizz3">
       <div class="row">
         <div class="col-md-1 text-center">
           <h3>UTUA</h3>
@@ -162,11 +145,11 @@
         <div class="col-md-3  text-center">
           Utua · 2020 © Todos os direitos reservados
         </div>
-        <div class="col-md-2  text-center"><a href="https://utua.com.br/politica-de-privacidade/"> Política de
+        <div class="col-md-2  text-center"><a class="text-light" href="https://utua.com.br/politica-de-privacidade/"> Política de
             privacidade </a> </div>
-        <div class="col-md-2  text-center"><a href="https://utua.com.br/termos-de-uso/"> Termos de Uso </a></div>
-        <div class="col-md-2  text-center"><a href="https://utua.com.br/quem-somos/"> Sobre nós </a></div>
-        <div class="col-md-2  text-center"><a href="https://utua.com.br/contato/"> Contato </a></div>
+        <div class="col-md-2  text-center"><a class="text-light" href="https://utua.com.br/termos-de-uso/"> Termos de Uso </a></div>
+        <div class="col-md-2  text-center"><a class="text-light" href="https://utua.com.br/quem-somos/"> Sobre nós </a></div>
+        <div class="col-md-2  text-center"><a class="text-light" href="https://utua.com.br/contato/"> Contato </a></div>
       </div>
     </footer>
   </div>
