@@ -88,7 +88,7 @@ function charge(question,resp){
   '<p class="lead">Digite seus dados abaixo e receba o cartão perfeito para você.</p>'+
   '</div>'+
   '<div class="row justify-content-md-center">'+
-     '<div class="col-md-9" >'+
+     '<div class="col-md-8" >'+
     
         '<div class="form-group">'+
           '<input type="text" class="form-control"  id="nome_send" aria-describedby="emailHelp" placeholder="Insira seu nome.">'+
