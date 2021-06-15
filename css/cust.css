@@ -1,288 +1,233 @@
 .MyFont {
- font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
- color:#0c0c0b;
- font-weight: bold;
- line-height: 90%;
- font-size: 27px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #0c0c0b;
+  font-weight: bold;
+  line-height: 90%;
+  font-size: 27px;
 }
 .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-.lead{
-   font-size: 500px; 
+.lead {
+  font-size: 50px;
 }
-.card-title{
- font-size: 25px;
+.card-title {
+  font-size: 25px;
 }
-.big{
- color: rgb(0, 0, 0) !important;
-font-weight: bold;
- font-size: 35px;
+.big {
+  color: rgb(0, 0, 0) !important;
+  font-weight: bold;
+  font-size: 35px;
 }
-.br{
- background-color: #fb6801;
-border-color:#fb6801;
+.br {
+  background-color: #fb6801;
+  border-color: #fb6801;
 }
 .btn-primary:hover {
-    font-weight: bold;
-    color: #fff;
-    background-color: #fb6801;
-    border-color: #fb6801;
+  font-weight: bold;
+  color: #fff;
+  background-color: #fb6801;
+  border-color: #fb6801;
 }
-#perg1
-{
-    opacity: 1;
-    transition: .3s;
+#perg1 {
+  opacity: 1;
+  transition: 0.3s;
 }
 
-.body
-{
-   max-width: 100%;
-   overflow-x: hidden;
-
-   
+.body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 /* PAGINA INTERFACE*/
 
-.global1
-{
-    position: absolute;
-    opacity: 1;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
+.global1 {
+  position: absolute;
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
 }
-.logoGlobal
-{
-    text-align: center;
-    color: azure;
-    font-size: 2em;
+.logoGlobal {
+  text-align: center;
+  color: azure;
+  font-size: 2em;
 }
-#textoGlob
-{
-    opacity: 1;
-    
+#textoGlob {
+  opacity: 1;
 }
-#botaoGlobal
-{
-    margin-top: 50px;
+#botaoGlobal {
+  margin-top: 50px;
 }
-.inter1
-{
-    -webkit-text-stroke-width: 2px; 
-    -webkit-text-stroke-color: #000;
-    animation: inter-animate 1s ease;
-    
+.inter1 {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
+  animation: inter-animate 1s ease;
 }
 
-.inter2
-{
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: #000;
-    animation: inter-animate2 1s ease;
-    
+.inter2 {
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #000;
+  animation: inter-animate2 1s ease;
 }
 
 /*CONTEUDO DO QUIZ*/
-.quizz1
-{
-    
- background-image: url(../img/menina1-min.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    animation: load-back 1s ease-in-out;
-    height: 100vh;
-    
+.quizz1 {
+  background-image: url(../img/menina1-min.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  animation: load-back 1s ease-in-out;
+  height: 100vh;
 }
-#quizz2
-{
-    opacity: 0;
-    transition: all 1s;
+#quizz2 {
+  opacity: 0;
+  transition: all 1s;
 }
-#quizz3
-{
-    opacity:0;
-    transition: all 1s;
-     position: absolute;
-    top: 95vh; 
-    width: 100%;
-    overflow-x: hidden;
-    z-index: 9999;
-    
+#quizz3 {
+  opacity: 0;
+  transition: all 1s;
+  position: absolute;
+  top: 95vh;
+  width: 100%;
+  overflow-x: hidden;
+  z-index: 9999;
 }
-#maincontent_id
-{
-background-color: rgba(250, 250, 250, .8);
-border-radius: 15px;
-margin: 10px auto 10px auto;
-box-shadow: 4px 5px rgba(8, 8, 8, .2);
+#maincontent_id {
+  background-color: rgba(250, 250, 250, 0.8);
+  border-radius: 15px;
+  margin: 10px auto 10px auto;
+  box-shadow: 4px 5px rgba(8, 8, 8, 0.2);
 }
-
 
 /*animação*/
 
-.logoUtua
-{
-    width: 100%;
-    height: 100px;
-    position: relative;
-    
+.logoUtua {
+  width: 100%;
+  height: 100px;
+  position: relative;
 }
 
-.logoUtua svg
-{
-    margin: 5px 0px 0px 10px;
-    width: 200px;
-    stroke-width: 2px;
-    stroke: rgb(255, 255, 255);
+.logoUtua svg {
+  margin: 5px 0px 0px 10px;
+  width: 200px;
+  stroke-width: 2px;
+  stroke: rgb(255, 255, 255);
+  stroke-dashoffset: 1000;
+  stroke-dasharray: 1000;
+  animation: logoAnime 2s ease-in-out forwards;
+}
+.ultS {
+  animation: inter-animate2 0.5s ease;
+}
+.ultN {
+  animation: inter-animate 0.5s ease;
+}
+.ultC {
+  animation: inter-cima 0.5s ease;
+}
+.ultB {
+  animation: inter-baixo 0.5s ease;
+}
+
+@keyframes logoAnime {
+  0% {
     stroke-dashoffset: 1000;
-    stroke-dasharray: 1000;
-    animation: logoAnime 2s ease-in-out forwards;
   }
-  .ultS
-  {
-      animation: inter-animate2 .5s ease;
+  70% {
+    stroke-dashoffset: 0;
   }
-  .ultN
-  {
-    animation: inter-animate .5s ease; 
+  100% {
+    stroke-dashoffset: 0;
   }
-  .ultC
-  {
-    animation: inter-cima .5s ease;
+}
+@keyframes inter-animate {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100px, 0, 0);
   }
-  .ultB
-  {
-    animation: inter-baixo .5s ease;
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
-  
-  @keyframes logoAnime
-  {
-      0%
-      {
-          stroke-dashoffset: 1000;
-      }
-      70%
-      {
-          stroke-dashoffset: 0;
-      }
-      100%
-      {
-           stroke-dashoffset: 0;
-      }
-    }
-    @keyframes inter-animate
-    { 0%
-       {
-       opacity: 0;
-       transform: translate3d(-100px, 0, 0);
-       
-       }
-       100%
-       {
-           opacity: 1;
-           transform: translate3d(0, 0, 0);
-       }
-   
-    }
-    @keyframes inter-animate2
-    {
-        0%
-        {
-            opacity: 0;
-            transform: translate3d(100px, 0, 0);
-        }
-        100%
-        {
-            opacity: 1;
-            transform: translate3d(0, 0, 0);
-        }
-    }@keyframes load-back
-    {
-        0%
-        {
-        opacity: 0;
-        background-position: left top;
+}
+@keyframes inter-animate2 {
+  0% {
+    opacity: 0;
+    transform: translate3d(100px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes load-back {
+  0% {
+    opacity: 0;
+    background-position: left top;
+  }
+  100% {
+    opacity: 1;
+    background-position: center top;
+  }
+}
+@keyframes inter-cima {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -200px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes inter-baixo {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 200px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+/* Resolução tela*/
 
-        }
-        100%
-        {
-        opacity: 1;
-        background-position: center top;
-        }
-        
-    }
-    @keyframes inter-cima
-    { 0%
-       {
-       opacity: 0;
-       transform: translate3d(0, -200px, 0);
-       
-       }
-       100%
-       {
-           opacity: 1;
-           transform: translate3d(0, 0, 0);
-       }
-    }
-    @keyframes inter-baixo
-    { 0%
-       {
-       opacity: 0;
-       transform: translate3d(0, 200px, 0);
-       
-       }
-       100%
-       {
-           opacity: 1;
-           transform: translate3d(0, 0, 0);
-       }
-    }
-    /* Resolução tela*/
-    
-    @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-  
-      @media (min-width: 1024px) {
-        .conteudo {
-          width: auto;
-          height: 700px;
-        }
-      }
-     
-      @media (max-width: 1024px) {
-        .conteudo {
-          width: auto;
-          height: 750px;
-        }
-        .quizz1{
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
 
-            background-position: left center;
-            animation: load-back .5s ease-in-out;
-        }
-        @keyframes load-back
-        {
-            0%
-            {
-            opacity: 0;
-            background-position: left;
-    
-            }
-            100%
-            {
-            opacity: 1;
-            background-position: left center;
-            }
-            
-        }
-        
+@media (min-width: 1024px) {
+  .conteudo {
+    width: auto;
+    height: 700px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .conteudo {
+    width: auto;
+    height: 750px;
+  }
+  .quizz1 {
+    background-position: left center;
+    animation: load-back 0.5s ease-in-out;
+  }
+  @keyframes load-back {
+    0% {
+      opacity: 0;
+      background-position: left;
     }
-    
+    100% {
+      opacity: 1;
+      background-position: left center;
+    }
+  }
+}
